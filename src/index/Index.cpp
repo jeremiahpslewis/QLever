@@ -227,7 +227,7 @@ VocabularyData Index::passFileForVocabulary(const string& filename,
             localWriter << innerOpt.value();
           }
         }
-        if (i % 100'000'000 == 0) {
+        if (i % 100'000 == 0) {
           LOG(INFO) << "Input triples processed: " << i << std::endl;
         }
       }
@@ -391,7 +391,7 @@ void Index::convertPartialToGlobalIds(
           {iterators[0]->second, iterators[1]->second, iterators[2]->second}};
 
       ++i;
-      if (i % 100'000'000 == 0) {
+      if (i % 100'000 == 0) {
         LOG(INFO) << "Triples converted: " << i << std::endl;
       }
     }
