@@ -227,7 +227,7 @@ VocabularyData Index::passFileForVocabulary(const string& filename,
             localWriter << innerOpt.value();
           }
         }
-        if (i % 100'000 == 0) {
+        if (i % 1'000 == 0) {
           LOG(INFO) << "Input triples processed: " << i << std::endl;
         }
       }
